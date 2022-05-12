@@ -9,23 +9,39 @@
 /* Begin PBXBuildFile section */
 		31764F66282A5458007E5D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31764F65282A5458007E5D09 /* AppDelegate.swift */; };
 		31764F68282A5458007E5D09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31764F67282A5458007E5D09 /* SceneDelegate.swift */; };
-		31764F6A282A5458007E5D09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31764F69282A5458007E5D09 /* ViewController.swift */; };
+		31764F6A282A5458007E5D09 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31764F69282A5458007E5D09 /* LoginViewController.swift */; };
 		31764F6D282A5458007E5D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31764F6B282A5458007E5D09 /* Main.storyboard */; };
 		31764F70282A5458007E5D09 /* AnonyChatForiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31764F6E282A5458007E5D09 /* AnonyChatForiOS.xcdatamodeld */; };
 		31764F72282A5459007E5D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31764F71282A5459007E5D09 /* Assets.xcassets */; };
 		31764F75282A5459007E5D09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31764F73282A5459007E5D09 /* LaunchScreen.storyboard */; };
+		31764F7D282A55B8007E5D09 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31764F7C282A55B8007E5D09 /* MessageModel.swift */; };
+		31764F82282A566E007E5D09 /* MessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31764F81282A566E007E5D09 /* MessageBuilder.swift */; };
+		31764F84282A6262007E5D09 /* RoomSelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31764F83282A6262007E5D09 /* RoomSelectorTableViewCell.swift */; };
+		31764F86282A64E8007E5D09 /* RoomSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31764F85282A64E8007E5D09 /* RoomSelectorViewController.swift */; };
+		31764F88282BD9DE007E5D09 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31764F87282BD9DE007E5D09 /* MessageTableViewCell.swift */; };
+		31764F8A282BDC23007E5D09 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31764F89282BDC23007E5D09 /* ChatRoomViewController.swift */; };
+		C349923228A7154B008959C9 /* Pods_AnonyChatForiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD515DCC4589736AF0BFBC02 /* Pods_AnonyChatForiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		103E34669E4B4880182BCFFF /* Pods-AnonyChatForiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnonyChatForiOS.release.xcconfig"; path = "Target Support Files/Pods-AnonyChatForiOS/Pods-AnonyChatForiOS.release.xcconfig"; sourceTree = "<group>"; };
 		31764F62282A5458007E5D09 /* AnonyChatForiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnonyChatForiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31764F65282A5458007E5D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31764F67282A5458007E5D09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		31764F69282A5458007E5D09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31764F69282A5458007E5D09 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		31764F6C282A5458007E5D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31764F6F282A5458007E5D09 /* AnonyChatForiOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnonyChatForiOS.xcdatamodel; sourceTree = "<group>"; };
 		31764F71282A5459007E5D09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31764F74282A5459007E5D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31764F76282A5459007E5D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31764F7C282A55B8007E5D09 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		31764F81282A566E007E5D09 /* MessageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBuilder.swift; sourceTree = "<group>"; };
+		31764F83282A6262007E5D09 /* RoomSelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSelectorTableViewCell.swift; sourceTree = "<group>"; };
+		31764F85282A64E8007E5D09 /* RoomSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSelectorViewController.swift; sourceTree = "<group>"; };
+		31764F87282BD9DE007E5D09 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		31764F89282BDC23007E5D09 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		3E6919E40913E246850B545A /* Pods-AnonyChatForiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnonyChatForiOS.debug.xcconfig"; path = "Target Support Files/Pods-AnonyChatForiOS/Pods-AnonyChatForiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CD515DCC4589736AF0BFBC02 /* Pods_AnonyChatForiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnonyChatForiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C349923228A7154B008959C9 /* Pods_AnonyChatForiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,8 @@
 			children = (
 				31764F64282A5458007E5D09 /* AnonyChatForiOS */,
 				31764F63282A5458007E5D09 /* Products */,
+				FD91C8E6E89AFA26DF3DF641 /* Pods */,
+				CD7EA8839E5E595100BA4D7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +77,9 @@
 		31764F64282A5458007E5D09 /* AnonyChatForiOS */ = {
 			isa = PBXGroup;
 			children = (
-				31764F65282A5458007E5D09 /* AppDelegate.swift */,
-				31764F67282A5458007E5D09 /* SceneDelegate.swift */,
-				31764F69282A5458007E5D09 /* ViewController.swift */,
+				31764F80282A5629007E5D09 /* Controller */,
+				31764F7F282A5620007E5D09 /* View */,
+				31764F7E282A5619007E5D09 /* Model */,
 				31764F6B282A5458007E5D09 /* Main.storyboard */,
 				31764F71282A5459007E5D09 /* Assets.xcassets */,
 				31764F73282A5459007E5D09 /* LaunchScreen.storyboard */,
@@ -70,6 +89,53 @@
 			path = AnonyChatForiOS;
 			sourceTree = "<group>";
 		};
+		31764F7E282A5619007E5D09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				31764F7C282A55B8007E5D09 /* MessageModel.swift */,
+				31764F81282A566E007E5D09 /* MessageBuilder.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		31764F7F282A5620007E5D09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				31764F83282A6262007E5D09 /* RoomSelectorTableViewCell.swift */,
+				31764F87282BD9DE007E5D09 /* MessageTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		31764F80282A5629007E5D09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				31764F69282A5458007E5D09 /* LoginViewController.swift */,
+				31764F65282A5458007E5D09 /* AppDelegate.swift */,
+				31764F67282A5458007E5D09 /* SceneDelegate.swift */,
+				31764F85282A64E8007E5D09 /* RoomSelectorViewController.swift */,
+				31764F89282BDC23007E5D09 /* ChatRoomViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD7EA8839E5E595100BA4D7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD515DCC4589736AF0BFBC02 /* Pods_AnonyChatForiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD91C8E6E89AFA26DF3DF641 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E6919E40913E246850B545A /* Pods-AnonyChatForiOS.debug.xcconfig */,
+				103E34669E4B4880182BCFFF /* Pods-AnonyChatForiOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31764F79282A5459007E5D09 /* Build configuration list for PBXNativeTarget "AnonyChatForiOS" */;
 			buildPhases = (
+				1D5E8932FA017AA706A021E9 /* [CP] Check Pods Manifest.lock */,
 				31764F5E282A5458007E5D09 /* Sources */,
 				31764F5F282A5458007E5D09 /* Frameworks */,
 				31764F60282A5458007E5D09 /* Resources */,
+				F60079CC2D39709A4DDFC774 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,15 +204,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D5E8932FA017AA706A021E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnonyChatForiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F60079CC2D39709A4DDFC774 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnonyChatForiOS/Pods-AnonyChatForiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnonyChatForiOS/Pods-AnonyChatForiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnonyChatForiOS/Pods-AnonyChatForiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		31764F5E282A5458007E5D09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31764F6A282A5458007E5D09 /* ViewController.swift in Sources */,
+				31764F86282A64E8007E5D09 /* RoomSelectorViewController.swift in Sources */,
+				31764F7D282A55B8007E5D09 /* MessageModel.swift in Sources */,
+				31764F88282BD9DE007E5D09 /* MessageTableViewCell.swift in Sources */,
+				31764F6A282A5458007E5D09 /* LoginViewController.swift in Sources */,
 				31764F66282A5458007E5D09 /* AppDelegate.swift in Sources */,
 				31764F68282A5458007E5D09 /* SceneDelegate.swift in Sources */,
+				31764F82282A566E007E5D09 /* MessageBuilder.swift in Sources */,
+				31764F8A282BDC23007E5D09 /* ChatRoomViewController.swift in Sources */,
 				31764F70282A5458007E5D09 /* AnonyChatForiOS.xcdatamodeld in Sources */,
+				31764F84282A6262007E5D09 /* RoomSelectorTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +402,7 @@
 		};
 		31764F7A282A5459007E5D09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E6919E40913E246850B545A /* Pods-AnonyChatForiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +431,7 @@
 		};
 		31764F7B282A5459007E5D09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 103E34669E4B4880182BCFFF /* Pods-AnonyChatForiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
