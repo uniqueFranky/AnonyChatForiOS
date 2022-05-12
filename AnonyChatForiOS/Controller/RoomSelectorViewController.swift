@@ -32,10 +32,6 @@ class RoomSelectorViewController: UIViewController {
     }
     
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-    }
-    
     func configureTableView() {
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -67,12 +63,17 @@ class RoomSelectorViewController: UIViewController {
 extension RoomSelectorViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let crvc = ChatRoomViewController()
-        crvc.setup(selfName: selfName, oppoName: indexPath.item == 0 ? "All" : onlineUsers[indexPath.item - 1], root: self, msgs: msgs)
+        crvc.setup(selfName: selfName, oppoName: indexPath.item == 0 ? "All" : onlineUsers[indexPath.item - 1], root: self)
         currentRoom = crvc
-        let navi = UINavigationController(rootViewController: crvc)
-        navi.modalPresentationStyle = .custom
-        navi.modalTransitionStyle = .crossDissolve
-        present(navi, animated: true)
+        if crvc.oppoName == selfName {
+            let alert = UIAlertController(title: "错误", message: "不能和自己聊天！", preferredStyle: .alert)
+            let okBtn = UIAlertAction(title: "OK", style: .default)
+            alert.addAction(okBtn)
+            present(alert, animated: true)
+            return
+        }
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "返回", style: .plain, target: self, action: nil)
+        navigationController?.pushViewController(crvc, animated: true)
     }
 }
 
@@ -102,16 +103,11 @@ extension RoomSelectorViewController: WebSocketDelegate {
             if msg.getType() == "Normal" {
                 if msg.getAttr("to") as! String == "All" {
                     appendOrCreate(name: "All", msg: msg)
-                    currentRoom?.msgDidArrive(msgs: msgs)
                 } else {
                     appendOrCreate(name: msg.getAttr("from") as! String, msg: msg)
-                    if let oppo = currentRoom?.oppoName {
-                        if oppo == msg.getAttr("from") as! String {
-                            currentRoom?.msgDidArrive(msgs: msgs)
-                        }
-                    }
+                    appendOrCreate(name: msg.getAttr("to") as! String, msg: msg)
                 }
-                print(msgs)
+                currentRoom?.msgDidArrive()
             }
             if msg.getType() == "ConnectionEstablished" || msg.getType() == "ConnectionCut" {
                 onlineUsers = msg.getAttr("onlineUsers") as! [String]
@@ -127,7 +123,7 @@ extension RoomSelectorViewController: WebSocketDelegate {
                 }
             }
         default:
-            print("default")
+            print(event)
         }
     }
     

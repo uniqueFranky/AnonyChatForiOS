@@ -70,7 +70,6 @@ class LoginViewController: UIViewController {
         ]
         view.addConstraints(constraints)
     }
-    
     @objc func getConnection() {
         print("Begin to Connect")
         guard let usrname = input.text else {
@@ -84,8 +83,6 @@ class LoginViewController: UIViewController {
             present(alert, animated: true)
             return
         }
-        let rsvc = RoomSelectorViewController()
-        let navi = UINavigationController(rootViewController: rsvc)
         socket = WebSocket(request: URLRequest(url: URL(string: ("ws://120.24.213.224:8080/chat/" + usrname).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!))
         socket.delegate = self
         socket.connect()

@@ -11,6 +11,7 @@ class RoomSelectorTableViewCell: UITableViewCell {
 
     let roomNameView = UILabel()
     let logoView = UIImageView()
+    let notiView = UIImageView()
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,6 +21,7 @@ class RoomSelectorTableViewCell: UITableViewCell {
         backgroundColor = .clear
         configureRoomNameView()
         configureLogoView()
+        configureNotiView()
         configureConstraints()
     }
     
@@ -28,6 +30,12 @@ class RoomSelectorTableViewCell: UITableViewCell {
         roomNameView.translatesAutoresizingMaskIntoConstraints = false
         roomNameView.clipsToBounds = true
 //        roomNameView.textAlignment = .center
+    }
+    private func configureNotiView() {
+        addSubview(notiView)
+        notiView.contentMode = .scaleAspectFit
+//        notiView.image = UIImage(systemName: "flame.fill")
+        notiView.translatesAutoresizingMaskIntoConstraints = false
     }
     
     //
@@ -48,8 +56,14 @@ class RoomSelectorTableViewCell: UITableViewCell {
             
             roomNameView.topAnchor.constraint(equalTo: logoView.topAnchor),
             roomNameView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 50),
-            roomNameView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             roomNameView.bottomAnchor.constraint(equalTo: logoView.bottomAnchor),
+            
+            notiView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            notiView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            notiView.widthAnchor.constraint(equalToConstant: 30),
+            notiView.heightAnchor.constraint(equalTo: notiView.widthAnchor),
+            
+            roomNameView.trailingAnchor.constraint(equalTo: notiView.leadingAnchor, constant: -10),
         ]
         addConstraints(constraints)
     }

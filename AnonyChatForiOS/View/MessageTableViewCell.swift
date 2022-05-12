@@ -75,7 +75,7 @@ class MessageTableViewCell: UITableViewCell {
                 logoView.widthAnchor.constraint(equalTo: logoView.heightAnchor),
                 
                 nameView.topAnchor.constraint(equalTo: logoView.topAnchor),
-                nameView.heightAnchor.constraint(equalToConstant: 12),
+                nameView.heightAnchor.constraint(equalToConstant: 20),
                 nameView.leadingAnchor.constraint(equalTo: logoView.trailingAnchor, constant: 10),
                 nameView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
                 
